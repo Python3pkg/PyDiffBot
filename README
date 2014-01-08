@@ -1,11 +1,14 @@
 PyDiffBot
 ==============
 
+$ pip install pydiffbot
 
 
 Sample Usage
 ============
-::
+
+from pydiffbot.diffbot import DiffBotArticle
+a = DiffBotArticle(YOUR_DIFFBOT_TOKEN_HERE, 'http://www.example.com')
 
 
 Code Documentation
