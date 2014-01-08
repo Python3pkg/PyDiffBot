@@ -1,4 +1,12 @@
 PyDiffBot
-=========
+==============
 
-Python Diffbot
+
+
+Sample Usage
+============
+::
+
+
+Code Documentation
+==================
