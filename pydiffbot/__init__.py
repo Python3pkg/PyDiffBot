@@ -3,7 +3,7 @@
 .. moduleauthor:: Mark Allan B Meriales <mark.meriales@gmail.com>
 
 """
-from diffbot import DiffBot
+from .diffbot import DiffBot
 
 __version__ = "0.1"
 __app_name__ = "pydiffbot"

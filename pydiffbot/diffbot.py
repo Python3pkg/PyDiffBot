@@ -1,7 +1,7 @@
-import urllib
+import urllib.request, urllib.parse, urllib.error
 import json
 
-from exceptions import *
+from .exceptions import *
 
 DIFFBOT_API_URL = 'http://api.diffbot.com/v2/'
 
@@ -36,12 +36,12 @@ class DiffBot(object):
         for attr in self.attrs:
             if getattr(self, attr) is not None:
                 context[attr] = getattr(self, attr)
-        params = urllib.urlencode(context)
+        params = urllib.parse.urlencode(context)
         return params
 
     def get(self):
         params = self.get_params()
-        request = urllib.urlopen('%s?%s' % (self._get_api_url(), params))
+        request = urllib.request.urlopen('%s?%s' % (self._get_api_url(), params))
         return request.read()
 
     def get_JSON(self):
